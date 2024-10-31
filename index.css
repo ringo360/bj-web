@@ -1,7 +1,20 @@
 html {
-    background-color: #00660e;
+    /* background-color: #00660e; */
+    background: linear-gradient(to right,#ff0000,#ffe600,#00ff15,#0051ff,#e100ff, #ff0000) 0 / 200%;
+    animation: 3s a linear infinite;
     color: white;
 }
+
+.wave {
+    background: linear-gradient(to right,#ff0000,#ffe600,#00ff15,#0051ff,#e100ff, #ff0000) 0 / 200%;
+    animation: 3s a linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  @keyframes a{
+    100% { background-position: 200%; }
+  }
+
 
 body {
     width: 100vw;
@@ -14,8 +27,19 @@ body {
     flex-direction: column;
 }
 
-.gamescreen {
+#gamescreen {
     display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#dealer, #player {
+    width: 100%;
+}
+
+#panel {
+    margin: 0;
+    padding: 0.5em;
+    /* border: 1px solid red; */
 }
 
 /*
@@ -25,4 +49,24 @@ img {
 */
 .fill-black {
     filter: brightness(0) invert(1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+  .btn {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+
+.dummy {
+    opacity: 0;
 }
