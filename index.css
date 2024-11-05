@@ -9,7 +9,7 @@ html {
 .wave {
     background: linear-gradient(to right,#ff0000,#ffe600,#00ff15,#0051ff,#e100ff, #ff0000) 0 / 200%;
     animation: 2s a linear infinite;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
   @keyframes a{
