@@ -93,7 +93,8 @@ function calcDelay(bytes) {
     return one_mb_ms * mb;
 }
 const length = card_names.length
-async function loader() {
+
+export async function Call() {
     await Def_Speed()
     /*
     for (let i = 0; i < length; i++) {
@@ -104,4 +105,3 @@ async function loader() {
         await delay(calcDelay(cardbytes[i]))
     }*/
 }
-loader()
