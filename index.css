@@ -71,3 +71,8 @@ img {
 .dummy {
     opacity: 0;
 }
+
+.cards {
+    height: 128px;
+    margin: 0;
+}
