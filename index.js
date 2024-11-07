@@ -27,9 +27,10 @@ async function AddCards(card) {
 }
 
 async function main() {
+    await import('./EventLister.js')
     const loader = await import('./loader.js')
-    await loader.Call()
-    console.log('Called')
+    loader.Call()
+    console.log('Loaded')
 }
 
 main()
