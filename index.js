@@ -27,9 +27,9 @@ async function AddCards(card) {
 }
 
 async function main() {
-    await import('./EventLister.js')
     const loader = await import('./loader.js')
     loader.Call()
+    await import('./game.js')
     console.log('Loaded')
 }
 
